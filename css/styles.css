@@ -11344,7 +11344,7 @@ hr.divider-light {
   color: #6c757d;
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   padding: 0.75rem 0;
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
@@ -11369,7 +11369,7 @@ hr.divider-light {
     padding: 0 1rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #fff;
+    color: orange;
   }
   #mainNav .navbar-nav .nav-item:last-child .nav-link {
     padding-right: 0;
@@ -11486,3 +11486,22 @@ td {
   color: white;
   width: 160px;
 }
+
+button {
+  padding: 0.6em 1em;
+  border: 4px solid #ffffff;
+  border-radius: 20px;
+  transition: ease-in-out 0.3s;
+  background-color: transparent;
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 16px;
+  font-family: "Source Sans Pro";
+  width: 160px;
+ }
+ 
+ button:hover {
+  transform: scale(1.2) rotate(10deg);
+  background-color: #fa725a;
+  color: white;
+ }

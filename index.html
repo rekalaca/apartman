@@ -255,82 +255,110 @@
                     <!-- To make this form functional, sign up at-->
                     <!-- https://startbootstrap.com/solution/contact-forms-->
                     <!-- to get an API token!-->
-                    <script src="https://cdn01.jotfor.ms/static/prototype.forms.js?3.3.39966" type="text/javascript"></script>
-                    <script src="https://cdn02.jotfor.ms/static/jotform.forms.js?3.3.39966" type="text/javascript"></script>
+                    <script src="https://cdn01.jotfor.ms/static/prototype.forms.js?3.3.39966"
+                        type="text/javascript"></script>
+                    <script src="https://cdn02.jotfor.ms/static/jotform.forms.js?3.3.39966"
+                        type="text/javascript"></script>
                     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.js"></script>
                     <script type="text/javascript">	JotForm.newDefaultTheme = true;
                         JotForm.extendsNewTheme = false;
                         JotForm.singleProduct = false;
                         JotForm.newPaymentUIForNewCreatedForms = true;
                         JotForm.newPaymentUI = true;
-                        JotForm.clearFieldOnHide="disable";
-                        JotForm.submitError="jumpToFirstError";
-                    
-                        JotForm.init(function(){
-                        /*INIT-START*/
-                    if (window.JotForm && JotForm.accessible) $('input_7').setAttribute('tabindex',0);
-                          JotForm.alterTexts({"ageVerificationError":"{minAge} évesnél idősebbnek kell lenned az űrlap beadásához.","alphabetic":"A mező csak betűket tartalmazhat","alphanumeric":"Ez a mező csak betűket és számokat.","appointmentSelected":"Kiválasztottad a {time}-i időpontot ezen a napon {date}","ccDonationMinLimitError":"Minim&amp;aacute;lis mennyis&amp;eacute;g {minAmount} {currency}","ccInvalidCVC":"CVC szám érvénytelen.","ccInvalidExpireDate":"Lejárati dátum helytelen","ccInvalidNumber":"Hitelkártya száma érvénytelen.","ccMissingDetails":"Please fill up the credit card details.","ccMissingDonation":"Kérjük, adja meg a numerikus értékeket adomány összegét.","ccMissingProduct":"Kérjük, válasszon legalább egy terméket!","characterLimitError":"Túl sok karakter. A korlát","characterMinLimitError":"Túl kevés karaktert. A minimum","confirmClearForm":"Biztosan törli az űrlapot?","confirmEmail":"Az e-mail cím nem egyezik","currency":"Ez a mező csak valuta-értéket tartalmazhat.","cyrillic":"Ez a mező csak cirill karaktereket tartalmazhat","dateInvalid":"Ez a dátum nem érvényes. A dátum formátum: {} méret","dateInvalidSeparate":"Ez a dátum nem érvényes. Adjon meg egy érvényes {elem}.","dateLimited":"Ez a dátum nem érhető el.","disallowDecimals":"Egy eg&amp;Atilde;&amp;copy;sz sz&amp;Atilde;&amp;iexcl;mot adjon meg!","dragAndDropFilesHere_infoMessage":"Itt húzza át a fájlokat","email":"Érvényes e-mail címet írjon be","fillMask":"A mező értéke kell kitölteni maszk.","freeEmailError":"Ingyenes e-mail fiókok nem engedélyezettek","generalError":"Vannak hibák a formában. Kérjük, javítsa, mielőtt folytatná.","generalPageError":"Vannak hibák, ezen az oldalon. Kérjük, javítsa, mielőtt folytatná.","gradingScoreError":"Pontszám összesen csak lehet kevesebb vagy egyenlő, mint","incompleteFields":"Kitöltetlen kötelező mezők vannak. Töltse ki őket.","inputCarretErrorA":"A beírt érték nem lehet kisebb, mint a minimum érték:","inputCarretErrorB":"A beírás nem haladhatja meg a legnagyobb értéket:","justSoldOut":"Éppen Kifogyott","lessThan":"A pontszám alacsonyabbnak kell lennie, mint, vagy egyenlő","maxDigitsError":"A maximális számjegyek megengedett","maxFileSize_infoMessage":"Maximális fájlméret","maxSelectionsError":"The maximum number of selections allowed is ","minSelectionsError":"A kiválasztások minimálisan szükséges száma:","multipleFileUploads_emptyError":"{file} üres, kérjük, válassza ki újra a fájlokat nélküle.","multipleFileUploads_fileLimitError":"Csak {fileLimit} fájl feltöltés engedélyezve.","multipleFileUploads_minSizeError":"{file} túl kicsi, minimális fájlméret {minSizeLimit}.","multipleFileUploads_onLeave":"A fájlok feltöltését, ha most elmész a feltöltés megszakad.","multipleFileUploads_sizeError":"{file} túl nagy, maximum fájlméret {sizelimit}.","multipleFileUploads_typeError":"{file} érvénytelen kiterjesztés. Csak a {extensions} megengedettek.","multipleFileUploads_uploadFailed":"File upload failed, please remove it and upload the file again.","noSlotsAvailable":"Nincsenek elérhető idősávok","notEnoughStock":"Nincs elég készlet a jelenlegi kiválasztáshoz","notEnoughStock_remainedItems":"Nincs elég készlet a jelenlegi kiválasztáshoz ({count} mennyiség maradt)","noUploadExtensions":"File has no extension file type (e.g. .txt, .png, .jpeg)","numeric":"Ez a mező csak numerikus értékeket tartalmazhatnak","pastDatesDisallowed":"Dátum nem lehet a múltban.","pleaseWait":"Kérjük, várjon ...","required":"A mező kitöltése kötelező.","requireEveryCell":"Minden cella kötelező!","requireEveryRow":"Minden sorban van szükség.","requireOne":"Legalább egy mezőt kötelező.","restrictedDomain":"This domain is not allowed","selectionSoldOut":"Kiválasztás Elfogyott","slotUnavailable":"A {time}-i időpont ezen a napon {date} már foglalt. Kérjük, válassz egy másik időpontot.","soldOut":"Kifogyott","subProductItemsLeft":"({count} mennyiség maradt)","uploadExtensions":"Lehet csak feltölteni alábbi fájlokat:","uploadFilesize":"A fájl maximális mérete:","uploadFilesizemin":"A fájl mérete nem lehet kisebb, mint:","url":"Ez a mező csak tartalmaz érvényes URL","validateEmail":"You need to validate this e-mail","wordLimitError":"Túl sok szó. A korlát","wordMinLimitError":"Túl kevés szó. A minimum"});
-                        /*INIT-END*/
+                        JotForm.clearFieldOnHide = "disable";
+                        JotForm.submitError = "jumpToFirstError";
+
+                        JotForm.init(function () {
+                            /*INIT-START*/
+                            if (window.JotForm && JotForm.accessible) $('input_7').setAttribute('tabindex', 0);
+                            JotForm.alterTexts({ "ageVerificationError": "{minAge} évesnél idősebbnek kell lenned az űrlap beadásához.", "alphabetic": "A mező csak betűket tartalmazhat", "alphanumeric": "Ez a mező csak betűket és számokat.", "appointmentSelected": "Kiválasztottad a {time}-i időpontot ezen a napon {date}", "ccDonationMinLimitError": "Minim&amp;aacute;lis mennyis&amp;eacute;g {minAmount} {currency}", "ccInvalidCVC": "CVC szám érvénytelen.", "ccInvalidExpireDate": "Lejárati dátum helytelen", "ccInvalidNumber": "Hitelkártya száma érvénytelen.", "ccMissingDetails": "Please fill up the credit card details.", "ccMissingDonation": "Kérjük, adja meg a numerikus értékeket adomány összegét.", "ccMissingProduct": "Kérjük, válasszon legalább egy terméket!", "characterLimitError": "Túl sok karakter. A korlát", "characterMinLimitError": "Túl kevés karaktert. A minimum", "confirmClearForm": "Biztosan törli az űrlapot?", "confirmEmail": "Az e-mail cím nem egyezik", "currency": "Ez a mező csak valuta-értéket tartalmazhat.", "cyrillic": "Ez a mező csak cirill karaktereket tartalmazhat", "dateInvalid": "Ez a dátum nem érvényes. A dátum formátum: {} méret", "dateInvalidSeparate": "Ez a dátum nem érvényes. Adjon meg egy érvényes {elem}.", "dateLimited": "Ez a dátum nem érhető el.", "disallowDecimals": "Egy eg&amp;Atilde;&amp;copy;sz sz&amp;Atilde;&amp;iexcl;mot adjon meg!", "dragAndDropFilesHere_infoMessage": "Itt húzza át a fájlokat", "email": "Érvényes e-mail címet írjon be", "fillMask": "A mező értéke kell kitölteni maszk.", "freeEmailError": "Ingyenes e-mail fiókok nem engedélyezettek", "generalError": "Vannak hibák a formában. Kérjük, javítsa, mielőtt folytatná.", "generalPageError": "Vannak hibák, ezen az oldalon. Kérjük, javítsa, mielőtt folytatná.", "gradingScoreError": "Pontszám összesen csak lehet kevesebb vagy egyenlő, mint", "incompleteFields": "Kitöltetlen kötelező mezők vannak. Töltse ki őket.", "inputCarretErrorA": "A beírt érték nem lehet kisebb, mint a minimum érték:", "inputCarretErrorB": "A beírás nem haladhatja meg a legnagyobb értéket:", "justSoldOut": "Éppen Kifogyott", "lessThan": "A pontszám alacsonyabbnak kell lennie, mint, vagy egyenlő", "maxDigitsError": "A maximális számjegyek megengedett", "maxFileSize_infoMessage": "Maximális fájlméret", "maxSelectionsError": "The maximum number of selections allowed is ", "minSelectionsError": "A kiválasztások minimálisan szükséges száma:", "multipleFileUploads_emptyError": "{file} üres, kérjük, válassza ki újra a fájlokat nélküle.", "multipleFileUploads_fileLimitError": "Csak {fileLimit} fájl feltöltés engedélyezve.", "multipleFileUploads_minSizeError": "{file} túl kicsi, minimális fájlméret {minSizeLimit}.", "multipleFileUploads_onLeave": "A fájlok feltöltését, ha most elmész a feltöltés megszakad.", "multipleFileUploads_sizeError": "{file} túl nagy, maximum fájlméret {sizelimit}.", "multipleFileUploads_typeError": "{file} érvénytelen kiterjesztés. Csak a {extensions} megengedettek.", "multipleFileUploads_uploadFailed": "File upload failed, please remove it and upload the file again.", "noSlotsAvailable": "Nincsenek elérhető idősávok", "notEnoughStock": "Nincs elég készlet a jelenlegi kiválasztáshoz", "notEnoughStock_remainedItems": "Nincs elég készlet a jelenlegi kiválasztáshoz ({count} mennyiség maradt)", "noUploadExtensions": "File has no extension file type (e.g. .txt, .png, .jpeg)", "numeric": "Ez a mező csak numerikus értékeket tartalmazhatnak", "pastDatesDisallowed": "Dátum nem lehet a múltban.", "pleaseWait": "Kérjük, várjon ...", "required": "A mező kitöltése kötelező.", "requireEveryCell": "Minden cella kötelező!", "requireEveryRow": "Minden sorban van szükség.", "requireOne": "Legalább egy mezőt kötelező.", "restrictedDomain": "This domain is not allowed", "selectionSoldOut": "Kiválasztás Elfogyott", "slotUnavailable": "A {time}-i időpont ezen a napon {date} már foglalt. Kérjük, válassz egy másik időpontot.", "soldOut": "Kifogyott", "subProductItemsLeft": "({count} mennyiség maradt)", "uploadExtensions": "Lehet csak feltölteni alábbi fájlokat:", "uploadFilesize": "A fájl maximális mérete:", "uploadFilesizemin": "A fájl mérete nem lehet kisebb, mint:", "url": "Ez a mező csak tartalmaz érvényes URL", "validateEmail": "You need to validate this e-mail", "wordLimitError": "Túl sok szó. A korlát", "wordMinLimitError": "Túl kevés szó. A minimum" });
+                            /*INIT-END*/
                         });
-                    
-                       JotForm.prepareCalculationsOnTheFly([null,null,{"name":"submit2","qid":"2","text":"Kuldes","type":"control_button"},{"description":"","name":"nev","qid":"3","text":"Nev","type":"control_fullname"},{"description":"","name":"email","qid":"4","subLabel":"pelda@pelda.hu","text":"E-mail","type":"control_email"},{"description":"","name":"telefonszam","qid":"5","text":"Telefonszam","type":"control_phone"},null,{"description":"","name":"irjBe","qid":"7","subLabel":"","text":"Irj be egy kerdest","type":"control_textarea"}]);
-                       setTimeout(function() {
-                    JotForm.paymentExtrasOnTheFly([null,null,{"name":"submit2","qid":"2","text":"Kuldes","type":"control_button"},{"description":"","name":"nev","qid":"3","text":"Nev","type":"control_fullname"},{"description":"","name":"email","qid":"4","subLabel":"pelda@pelda.hu","text":"E-mail","type":"control_email"},{"description":"","name":"telefonszam","qid":"5","text":"Telefonszam","type":"control_phone"},null,{"description":"","name":"irjBe","qid":"7","subLabel":"","text":"Irj be egy kerdest","type":"control_textarea"}]);}, 20); 
+
+                        JotForm.prepareCalculationsOnTheFly([null, null, { "name": "submit2", "qid": "2", "text": "Kuldes", "type": "control_button" }, { "description": "", "name": "nev", "qid": "3", "text": "Nev", "type": "control_fullname" }, { "description": "", "name": "email", "qid": "4", "subLabel": "pelda@pelda.hu", "text": "E-mail", "type": "control_email" }, { "description": "", "name": "telefonszam", "qid": "5", "text": "Telefonszam", "type": "control_phone" }, null, { "description": "", "name": "irjBe", "qid": "7", "subLabel": "", "text": "Irj be egy kerdest", "type": "control_textarea" }]);
+                        setTimeout(function () {
+                            JotForm.paymentExtrasOnTheFly([null, null, { "name": "submit2", "qid": "2", "text": "Kuldes", "type": "control_button" }, { "description": "", "name": "nev", "qid": "3", "text": "Nev", "type": "control_fullname" }, { "description": "", "name": "email", "qid": "4", "subLabel": "pelda@pelda.hu", "text": "E-mail", "type": "control_email" }, { "description": "", "name": "telefonszam", "qid": "5", "text": "Telefonszam", "type": "control_phone" }, null, { "description": "", "name": "irjBe", "qid": "7", "subLabel": "", "text": "Irj be egy kerdest", "type": "control_textarea" }]);
+                        }, 20); 
                     </script>
-                    <style type="text/css">@media print{.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
-                    <link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.39966"/>
-                    <link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/payment/payment_styles.css?3.3.39966" />
-                    <link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/css/styles/payment/payment_feature.css?3.3.39966" />
+                    <style type="text/css">
+                        @media print {
+                            .form-section {
+                                display: inline !important
+                            }
+
+                            .form-pagebreak {
+                                display: none !important
+                            }
+
+                            .form-section-closed {
+                                height: auto !important
+                            }
+
+                            .page-section {
+                                position: initial !important
+                            }
+                        }
+                    </style>
+                    <link type="text/css" rel="stylesheet"
+                        href="https://cdn01.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.39966" />
+                    <link type="text/css" rel="stylesheet"
+                        href="https://cdn02.jotfor.ms/css/styles/payment/payment_styles.css?3.3.39966" />
+                    <link type="text/css" rel="stylesheet"
+                        href="https://cdn03.jotfor.ms/css/styles/payment/payment_feature.css?3.3.39966" />
                     <style type="text/css" id="form-designer-style">
                         /* Injected CSS Code */
-                    /*PREFERENCES STYLE*/
+                        /*PREFERENCES STYLE*/
                         .form-all {
-                          font-family: Inter, sans-serif;
+                            font-family: Inter, sans-serif;
                         }
-                      
+
                         .form-label.form-label-auto {
-                          
-                        display: block;
-                        float: none;
-                        text-align: left;
-                        width: 100%;
-                      
+
+                            display: block;
+                            float: none;
+                            text-align: left;
+                            width: 100%;
+
                         }
-                      
+
                         .form-line {
-                          margin-top: 12px;
-                          margin-bottom: 12px;
+                            margin-top: 12px;
+                            margin-bottom: 12px;
                         }
-                      
+
                         .form-all {
-                          max-width: 752px;
-                          width: 100%;
+                            max-width: 752px;
+                            width: 100%;
                         }
-                      
+
                         .form-label.form-label-left,
                         .form-label.form-label-right,
                         .form-label.form-label-left.form-label-auto,
                         .form-label.form-label-right.form-label-auto {
-                          width: 230px;
+                            width: 230px;
                         }
-                      
+
                         .form-all {
-                          font-size: 16px
+                            font-size: 16px
                         }
-                      
-                        .supernova .form-all, .form-all {
-                          background-color: #fff;
-                        }
-                      
+
+                        .supernova .form-all,
                         .form-all {
-                          color: #2C3345;
+                            background-color: #fff;
                         }
+
+                        .form-all {
+                            color: #2C3345;
+                        }
+
                         .form-header-group .form-header {
-                          color: #2C3345;
+                            color: #2C3345;
                         }
+
                         .form-header-group .form-subHeader {
-                          color: #2C3345;
+                            color: #2C3345;
                         }
+
                         .form-label-top,
                         .form-label-left,
                         .form-label-right,
@@ -345,19 +373,21 @@
                         [data-blotid][data-type=radiobox] [data-labelid],
                         span.FITB-inptCont[data-type=checkbox] label,
                         span.FITB-inptCont[data-type=radiobox] label {
-                          color: #2C3345;
+                            color: #2C3345;
                         }
+
                         .form-sub-label {
-                          color: #464d5f;
+                            color: #464d5f;
                         }
-                      
+
                         .supernova {
-                          background-color: #f3f3fe;
+                            background-color: #f3f3fe;
                         }
+
                         .supernova body {
-                          background: transparent;
+                            background: transparent;
                         }
-                      
+
                         .form-textbox,
                         .form-textarea,
                         .form-dropdown,
@@ -365,103 +395,186 @@
                         .form-checkbox-other-input,
                         .form-captcha input,
                         .form-spinner input {
-                          background-color: #fff;
+                            background-color: #fff;
                         }
-                      
+
                         .supernova {
-                          background-image: none;
+                            background-image: none;
                         }
+
                         #stage {
-                          background-image: none;
+                            background-image: none;
                         }
-                      
+
                         .form-all {
-                          background-image: none;
+                            background-image: none;
                         }
-                      
-                      .ie-8 .form-all:before { display: none; }
-                      .ie-8 {
-                        margin-top: auto;
-                        margin-top: initial;
-                      }
-                      
-                      /*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*/.form-label.form-label-auto {
-                            
-                          display: block;
-                          float: none;
-                          text-align: left;
-                          width: 100%;
-                        
-                          }
+
+                        .ie-8 .form-all:before {
+                            display: none;
+                        }
+
+                        .ie-8 {
+                            margin-top: auto;
+                            margin-top: initial;
+                        }
+
+                        /*PREFERENCES STYLE*/
+                        /*__INSPECT_SEPERATOR__*/
+                        .form-label.form-label-auto {
+
+                            display: block;
+                            float: none;
+                            text-align: left;
+                            width: 100%;
+
+                        }
+
                         /* Injected CSS Code */
                     </style>
-                    
-                    <form class="jotform-form" action="https://submit.jotformeu.com/submit/230653349316052" method="post" name="form_230653349316052" id="230653349316052" accept-charset="utf-8" autocomplete="on"><input type="hidden" name="formID" value="230653349316052" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" />
-                      <div role="main" class="form-all">
-                        <ul class="form-section page-section">
-                          <li class="form-line jf-required" data-type="control_fullname" id="id_3"><label class="form-label form-label-top form-label-auto" id="label_3" for="first_3"> Név<span class="form-required">*</span> </label>
-                            <div id="cid_3" class="form-input-wide jf-required" data-layout="full">
-                              <div data-wrapper-react="true"><span class="form-sub-label-container" style="vertical-align:top" data-input-type="first"><input type="text" id="first_3" name="q3_nev[first]" class="form-textbox validate[required]" data-defaultvalue="" autoComplete="section-input_3 given-name" size="10" value="" data-component="first" aria-labelledby="label_3 sublabel_3_first" required="" /><label class="form-sub-label" for="first_3" id="sublabel_3_first" style="min-height:13px" aria-hidden="false">Keresztnév</label></span><span class="form-sub-label-container" style="vertical-align:top" data-input-type="last"><input type="text" id="last_3" name="q3_nev[last]" class="form-textbox validate[required]" data-defaultvalue="" autoComplete="section-input_3 family-name" size="15" value="" data-component="last" aria-labelledby="label_3 sublabel_3_last" required="" /><label class="form-sub-label" for="last_3" id="sublabel_3_last" style="min-height:13px" aria-hidden="false">Vezetéknév</label></span></div>
-                            </div>
-                          </li>
-                          <li class="form-line jf-required" data-type="control_email" id="id_4"><label class="form-label form-label-top form-label-auto" id="label_4" for="input_4"> E-mail<span class="form-required">*</span> </label>
-                            <div id="cid_4" class="form-input-wide jf-required" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="email" id="input_4" name="q4_email" class="form-textbox validate[required, Email]" data-defaultvalue="" style="width:310px" size="310" value="" data-component="email" aria-labelledby="label_4 sublabel_input_4" required="" /><label class="form-sub-label" for="input_4" id="sublabel_input_4" style="min-height:13px" aria-hidden="false">pelda@pelda.hu</label></span> </div>
-                          </li>
-                          <li class="form-line" data-type="control_phone" id="id_5"><label class="form-label form-label-top form-label-auto" id="label_5" for="input_5_area"> Telefonszám </label>
-                            <div id="cid_5" class="form-input-wide" data-layout="half">
-                              <div data-wrapper-react="true"><span class="form-sub-label-container" style="vertical-align:top" data-input-type="areaCode"><input type="tel" id="input_5_area" name="q5_telefonszam[area]" class="form-textbox" data-defaultvalue="" autoComplete="section-input_5 tel-area-code" value="" data-component="areaCode" aria-labelledby="label_5 sublabel_5_area" /><span class="phone-separate" aria-hidden="true"> -</span><label class="form-sub-label" for="input_5_area" id="sublabel_5_area" style="min-height:13px" aria-hidden="false">Körzetszám</label></span><span class="form-sub-label-container" style="vertical-align:top" data-input-type="phone"><input type="tel" id="input_5_phone" name="q5_telefonszam[phone]" class="form-textbox" data-defaultvalue="" autoComplete="section-input_5 tel-local" value="" data-component="phone" aria-labelledby="label_5 sublabel_5_phone" /><label class="form-sub-label" for="input_5_phone" id="sublabel_5_phone" style="min-height:13px" aria-hidden="false">Telefonszám</label></span></div>
-                            </div>
-                          </li>
-                          <li class="form-line jf-required" data-type="control_textarea" id="id_7"><label class="form-label form-label-top form-label-auto" id="label_7" for="input_7"> Írj be egy kérdést<span class="form-required">*</span> </label>
-                            <div id="cid_7" class="form-input-wide jf-required" data-layout="full"> <textarea id="input_7" class="form-textarea validate[required]" name="q7_irjBe" style="width:648px;height:163px" data-component="textarea" required="" aria-labelledby="label_7"></textarea> </div>
-                          </li>
-                          <li class="form-line" data-type="control_button" id="id_2">
-                            <div id="cid_2" class="form-input-wide" data-layout="full">
-                              <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField"><button id="input_2" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">Küldés</button></div>
-                            </div>
-                          </li>
-                          <li style="display:none">Should be Empty: <input type="text" name="website" value="" /></li>
-                        </ul>
-                      </div>
-                      <script>
-                        JotForm.showJotFormPowered = "new_footer";
-                      </script>
-                      <script>
-                        JotForm.poweredByText = "Powered by Jotform";
-                      </script><input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="230653349316052" />
-                      <script type="text/javascript">
-                        var all_spc = document.querySelectorAll("form[id='230653349316052'] .si" + "mple" + "_spc");
-                        for (var i = 0; i < all_spc.length; i++)
-                        {
-                          all_spc[i].value = "230653349316052-230653349316052";
-                        }
-                      </script>
-                      <div class="formFooter-heightMask"></div>
-                      
-                    </form><script type="text/javascript">JotForm.ownerView=true;</script><script type="text/javascript">JotForm.forwardToEu=true;</script><script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.39966"></script>
+
+                    <form class="jotform-form" action="https://submit.jotformeu.com/submit/230653349316052"
+                        method="post" name="form_230653349316052" id="230653349316052" accept-charset="utf-8"
+                        autocomplete="on"><input type="hidden" name="formID" value="230653349316052" /><input
+                            type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber"
+                            value="" />
+                        <div role="main" class="form-all">
+                            <ul class="form-section page-section">
+                                <li class="form-line jf-required" data-type="control_fullname" id="id_3"><label
+                                        class="form-label form-label-top form-label-auto" id="label_3" for="first_3">
+                                        Név<span class="form-required">*</span> </label>
+                                    <div id="cid_3" class="form-input-wide jf-required" data-layout="full">
+                                        <div data-wrapper-react="true"><span class="form-sub-label-container"
+                                                style="vertical-align:top" data-input-type="first"><input type="text"
+                                                    id="first_3" name="q3_nev[first]"
+                                                    class="form-textbox validate[required]" data-defaultvalue=""
+                                                    autoComplete="section-input_3 given-name" size="10" value=""
+                                                    data-component="first" aria-labelledby="label_3 sublabel_3_first"
+                                                    required="" /><label class="form-sub-label" for="first_3"
+                                                    id="sublabel_3_first" style="min-height:13px"
+                                                    aria-hidden="false">Keresztnév</label></span><span
+                                                class="form-sub-label-container" style="vertical-align:top"
+                                                data-input-type="last"><input type="text" id="last_3"
+                                                    name="q3_nev[last]" class="form-textbox validate[required]"
+                                                    data-defaultvalue="" autoComplete="section-input_3 family-name"
+                                                    size="15" value="" data-component="last"
+                                                    aria-labelledby="label_3 sublabel_3_last" required="" /><label
+                                                    class="form-sub-label" for="last_3" id="sublabel_3_last"
+                                                    style="min-height:13px"
+                                                    aria-hidden="false">Vezetéknév</label></span></div>
+                                    </div>
+                                </li>
+                                <li class="form-line jf-required" data-type="control_email" id="id_4"><label
+                                        class="form-label form-label-top form-label-auto" id="label_4" for="input_4">
+                                        E-mail<span class="form-required">*</span> </label>
+                                    <div id="cid_4" class="form-input-wide jf-required" data-layout="half"> <span
+                                            class="form-sub-label-container" style="vertical-align:top"><input
+                                                type="email" id="input_4" name="q4_email"
+                                                class="form-textbox validate[required, Email]" data-defaultvalue=""
+                                                style="width:310px" size="310" value="" data-component="email"
+                                                aria-labelledby="label_4 sublabel_input_4" required="" /><label
+                                                class="form-sub-label" for="input_4" id="sublabel_input_4"
+                                                style="min-height:13px"
+                                                aria-hidden="false">pelda@pelda.hu</label></span> </div>
+                                </li>
+                                <li class="form-line" data-type="control_phone" id="id_5"><label
+                                        class="form-label form-label-top form-label-auto" id="label_5"
+                                        for="input_5_area"> Telefonszám </label>
+                                    <div id="cid_5" class="form-input-wide" data-layout="half">
+                                        <div data-wrapper-react="true"><span class="form-sub-label-container"
+                                                style="vertical-align:top" data-input-type="areaCode"><input type="tel"
+                                                    id="input_5_area" name="q5_telefonszam[area]" class="form-textbox"
+                                                    data-defaultvalue="" autoComplete="section-input_5 tel-area-code"
+                                                    value="" data-component="areaCode"
+                                                    aria-labelledby="label_5 sublabel_5_area" /><span
+                                                    class="phone-separate" aria-hidden="true"> -</span><label
+                                                    class="form-sub-label" for="input_5_area" id="sublabel_5_area"
+                                                    style="min-height:13px"
+                                                    aria-hidden="false">Körzetszám</label></span><span
+                                                class="form-sub-label-container" style="vertical-align:top"
+                                                data-input-type="phone"><input type="tel" id="input_5_phone"
+                                                    name="q5_telefonszam[phone]" class="form-textbox"
+                                                    data-defaultvalue="" autoComplete="section-input_5 tel-local"
+                                                    value="" data-component="phone"
+                                                    aria-labelledby="label_5 sublabel_5_phone" /><label
+                                                    class="form-sub-label" for="input_5_phone" id="sublabel_5_phone"
+                                                    style="min-height:13px"
+                                                    aria-hidden="false">Telefonszám</label></span></div>
+                                    </div>
+                                </li>
+                                <li class="form-line jf-required" data-type="control_textarea" id="id_7"><label
+                                        class="form-label form-label-top form-label-auto" id="label_7" for="input_7">
+                                        Írj be egy kérdést<span class="form-required">*</span> </label>
+                                    <div id="cid_7" class="form-input-wide jf-required" data-layout="full"> <textarea
+                                            id="input_7" class="form-textarea validate[required]" name="q7_irjBe"
+                                            style="width:648px;height:163px" data-component="textarea" required=""
+                                            aria-labelledby="label_7"></textarea> </div>
+                                </li>
+                                <li class="form-line" data-type="control_button" id="id_2">
+                                    <div id="cid_2" class="form-input-wide" data-layout="full">
+                                        <div data-align="auto"
+                                            class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField">
+                                            <button id="input_2" type="submit"
+                                                class="form-submit-button submit-button jf-form-buttons jsTest-submitField"
+                                                data-component="button" data-content="">Küldés</button></div>
+                                    </div>
+                                </li>
+                                <li style="display:none">Should be Empty: <input type="text" name="website" value="" />
+                                </li>
+                            </ul>
+                        </div>
+                        <script>
+                            JotForm.showJotFormPowered = "new_footer";
+                        </script>
+                        <script>
+                            JotForm.poweredByText = "Powered by Jotform";
+                        </script><input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc"
+                            value="230653349316052" />
+                        <script type="text/javascript">
+                            var all_spc = document.querySelectorAll("form[id='230653349316052'] .si" + "mple" + "_spc");
+                            for (var i = 0; i < all_spc.length; i++) {
+                                all_spc[i].value = "230653349316052-230653349316052";
+                            }
+                        </script>
+                        <div class="formFooter-heightMask"></div>
+
+                    </form>
+                    <script type="text/javascript">JotForm.ownerView = true;</script>
+                    <script type="text/javascript">JotForm.forwardToEu = true;</script>
+                    <script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.39966"></script>
                     <script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.39966"></script>
                 </div>
             </div>
+            <hr>
+
             <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-4 text-center mb-5 mb-lg-0">
+
+                <div class="col-lg-3 text-center mb-5 mb-lg-0">
                     <i class="bi-phone fs-2 mb-3 text-muted"></i>
-                    <div>telefon: +36 (30) 123-4567</div>
+                    <div><a href="tel:+363012345670">telefon: +36 (30) 123-4567</a></div>
                 </div>
-                <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                <div class="col-lg-3 text-center mb-5 mb-lg-0">
                     <i class="bi-house-door fs-2 mb-3 text-muted"></i>
-                    <div>cím: <a href="https://goo.gl/maps/LG7imJU4G1mm4wrY6" target="_blank">Balatoncsodaszép, Parti sétány 1.</a></div>
+                    <div>cím: <a href="https://goo.gl/maps/LG7imJU4G1mm4wrY6" target="_blank">Balatoncsodaszép, Parti
+                            sétány 1.</a></div>
                 </div>
-                <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                <div class="col-lg-3 text-center mb-5 mb-lg-0">
                     <i class="bi-envelope fs-2 mb-3 text-muted"></i>
                     <div>m@il: <a href="mailto:rekalaca@gmail.com">info@rekalacaresort.com</a></div>
                 </div>
+                <div class="col-lg-3 text-center mb-5 mb-lg-0">
+                    <i class="bi-facebook fs-2 mb-3 text-muted"></i>
+                    <div>Facebook: <a href="https://www.facebook.com/groups/szallashirdeto">rekalacaresort</a></div>
+                </div>
+
             </div>
         </div>
     </section>
     <!-- Footer-->
-    <footer class="bg-light py-5">
+    <footer class="bg-dark py-5">
         <div class="container px-4 px-lg-5">
-            <div class="small text-center text-muted">Copyright &copy; 2023 - rekalaca</div>
+            <div class="small text-center copys">Copyright &copy; 2023<img class="img-fluid logom" src="assets/logo-no-background.png" alt="..."></div>
+            
         </div>
     </footer>
     <!-- Bootstrap core JS-->

@@ -11461,3 +11461,10 @@ header.masthead h1, header.masthead .h1 {
   color: #ECF0F1;
   font-size: 1em;
 }
+.logom{
+  max-width: 140px;
+  text-align: center;
+}
+.copys{
+  color:orange;
+}

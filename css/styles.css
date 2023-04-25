@@ -11463,6 +11463,7 @@ header.masthead h1, header.masthead .h1 {
 .magyaraz{
   color: #ECF0F1;
   font-size: 1em;
+  font-weight: 600;
 }
 .logom{
   max-width: 140px;
@@ -11487,7 +11488,7 @@ td {
   width: 160px;
 }
 
-button {
+.button {
   padding: 0.8em 1.8em;
   border: 2px solid #f4623a;
   border-radius: 25px;
@@ -11500,10 +11501,10 @@ button {
   transition: .3s;
   z-index: 1;
   font-family: inherit;
-  color: #f4623a;
+  color: #fff;
  }
  
- button::before {
+ .button::before {
   content: '';
   width: 0;
   height: 300%;
@@ -11517,11 +11518,11 @@ button {
   z-index: -1;
  }
  
- button:hover::before {
+ .button:hover::before {
   width: 105%;
  }
  
- button:hover {
+ .button:hover {
   color: white;
  }
  
@@ -11531,3 +11532,79 @@ button {
   font-size: 13px;
   border-radius: 25px;
  }
+
+ form {
+  max-width: 500px;
+  text-align: left;
+  font-weight: 600;
+}
+
+input,
+textarea,
+label {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  color: #000;
+}
+
+input,
+textarea {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #000;
+  margin-bottom: 20px;
+}
+
+input[type=submit] {
+  background-color:#e6c068;
+  padding: 10px 0;
+  color: #000;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: none;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: all .3s ease;
+  border-radius: 20px;
+}
+
+input[type=submit]:hover {
+  background: #c6972a;
+  color: #000;
+}
+
+input,
+textarea {
+  color: black;
+  font-size: 18px;
+  padding: 10px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 1px solid #fff;
+}
+
+a {
+  color: orange;
+  font-weight: 700;
+}
+
+a:hover {
+  color: green;
+}
+
+@media (max-width: 768px) {
+  #contact p {
+    font-size: 14px;
+    line-height: 36px;
+    font-weight: 600;
+  }
+  .datas{
+    padding: 0px;
+    margin: 0px;
+  }
+
+}

@@ -27,7 +27,11 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
 
     <!--FONT AWESOME-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
 </head>
@@ -321,7 +325,8 @@
                 <div class="col-lg-10 col-xl-8 text-center">
                     <h2 class="mt-0">Keressen bizalommal!</h2>
                     <hr class="divider" />
-                    <p class="text-muted mb-5" style="color: black; font-weight: 600;">Ha kérdés merülne fel, vagy egyedi árajánlatot szeretne kérni, akkor
+                    <p class="text-muted mb-5" style="color: black; font-weight: 600;">Ha kérdés merülne fel, vagy
+                        egyedi árajánlatot szeretne kérni, akkor
                         várjuk üzenetét!<br><br>
                         El lehet helyezni az oldalon egy ilyen felületet is, ahol a leendő bérlő írásban fel tudja venni
                         Önnel a kapcsolatot, amennyiben valami kérdés merülne fel benne. A kitöltendő mezőket persze
@@ -331,82 +336,93 @@
             </div>
             <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
                 <div class="col-lg-10">
-                   <div class="row">
+                    <div class="row">
 
-          <div class="col-lg-12 mt-5 mt-lg-0 stil kozepre">
+                        <div class="col-lg-12 mt-5 mt-lg-0 stil kozepre">
 
-            <div class="wrapper">
-              <div class="row no-gutters" id="formb">
-                <div class="col-md-6 d-flex align-items-stretch">
-                  <div class="contact-wrap w-100 p-md-5 p-4 py-5">
-                    <div id="form-message-warning" class="mb-4"></div>
+                            <div class="wrapper">
+                                <div class="row no-gutters" id="formb">
+                                    <div class="col-md-6 d-flex align-items-stretch">
+                                        <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                                            <div id="form-message-warning" class="mb-4"></div>
 
-                    <form action="mail.php" method="POST">
-                      <label for="name">Név/Cégnév:</label>
-                      <input type="text" name="name" id="name">
-                      <label for="email">Email címe:</label>
-                      <input type="email" name="email" id="email">
-                      <label for="subject">Tárgy:</label>
-                      <input type="text" name="subject" id="subject">
-                      <label for="message">Üzenet szövege...</label>
-                      <textarea name="message" cols="30" rows="3"></textarea>
-                      <input type="submit" value="Elküldöm!">
-                    </form>
-                  </div>
+                                            <form action="mail.php" method="POST">
+                                                <label for="name">Név/Cégnév:</label>
+                                                <input type="text" name="name" id="name">
+                                                <label for="email">Email címe:</label>
+                                                <input type="email" name="email" id="email">
+                                                <label for="subject">Tárgy:</label>
+                                                <input type="text" name="subject" id="subject">
+                                                <label for="message">Üzenet szövege...</label>
+                                                <textarea name="message" cols="30" rows="3"></textarea>
+                                                <input type="submit" value="Elküldöm!">
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 d-flex align-items-stretch datas">
+                                        <div class="info-wrap w-100 p-md-5 p-4 py-5 img">
+                                            <div class="dbox w-100 d-flex align-items-start stil">
+                                                <div class="text pl-3">
+                                                    <span class="fa fa-map-marker fa-2x"
+                                                        style="color: #e6c068; margin-right: 10px;"></span>
+                                                    <p><span>Cím:</span><br><a
+                                                            href="https://goo.gl/maps/LG7imJU4G1mm4wrY6"
+                                                            target="_blank">Balatoncsodaszép, Parti
+                                                            sétány 1.</a></p>
+                                                </div>
+                                            </div>
+                                            <div class="dbox w-100 d-flex align-items-center stil">
+                                                <div class="text pl-3">
+                                                    <span class="fa fa-phone fa-2x"
+                                                        style="color: #e6c068; margin-right: 10px;"></span>
+                                                    <p><span>Telefon:</span><br><a href="tel:+363012345670">+ 36 30
+                                                            123-45-67</a></p>
+                                                </div>
+                                            </div>
+                                            <div class="dbox w-100 d-flex align-items-center stil">
+                                                <div class="text pl-3">
+                                                    <span class="fa fa-paper-plane fa-2x"
+                                                        style="color: #e6c068; margin-right: 10px;"></span>
+                                                    <p><span>Email:</span><br><a
+                                                            href="mailto:rekalaca@gmail.com">info@rekalacaresort.com</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="dbox w-100 d-flex align-items-center stil">
+                                                <div class="text pl-3">
+                                                    <span class="fa fa-globe fa-2x"
+                                                        style="color: #e6c068; margin-right: 10px;"></span>
+                                                    <p><span>Web:</span><br><a href="https://www.white-apartman.hu/"
+                                                            target="_blank">www.white-apartman.hu</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="dbox w-100 d-flex align-items-center stil">
+                                                <div class="text pl-3">
+                                                    <span class="fa fa-facebook fa-2x"
+                                                        style="color: #e6c068; margin-right: 10px;"></span>
+                                                    <p><span>Facebook:</span><br><a
+                                                            href="https://www.facebook.com/groups/szallashirdeto">rekalacaresort</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="col-md-6 d-flex align-items-stretch datas">
-                  <div class="info-wrap w-100 p-md-5 p-4 py-5 img">
-                    <div class="dbox w-100 d-flex align-items-start stil">
-                      <div class="text pl-3">
-                        <span class="fa fa-map-marker fa-2x" style="color: #e6c068; margin-right: 10px;"></span>
-                        <p><span>Cím:</span><br><a href="https://goo.gl/maps/LG7imJU4G1mm4wrY6" target="_blank">Balatoncsodaszép, Parti
-                            sétány 1.</a></p>
-                      </div>
-                    </div>
-                    <div class="dbox w-100 d-flex align-items-center stil">
-                      <div class="text pl-3">
-                        <span class="fa fa-phone fa-2x" style="color: #e6c068; margin-right: 10px;"></span>
-                        <p><span>Telefon:</span><br><a href="tel:+363012345670">+ 36 30 123-45-67</a></p>
-                      </div>
-                    </div>
-                    <div class="dbox w-100 d-flex align-items-center stil">
-                      <div class="text pl-3">
-                        <span class="fa fa-paper-plane fa-2x" style="color: #e6c068; margin-right: 10px;"></span>
-                        <p><span>Email:</span><br><a
-                            href="mailto:rekalaca@gmail.com">info@rekalacaresort.com</a></p>
-                      </div>
-                    </div>
-                    <div class="dbox w-100 d-flex align-items-center stil">
-                      <div class="text pl-3">
-                        <span class="fa fa-globe fa-2x" style="color: #e6c068; margin-right: 10px;"></span>
-                        <p><span>Web:</span><br><a href="https://www.white-apartman.hu/" target="_blank">www.white-apartman.hu</a>
-                        </p>
-                      </div>
-                    </div>
-                    <div class="dbox w-100 d-flex align-items-center stil">
-                        <div class="text pl-3">
-                            <span class="fa fa-facebook fa-2x" style="color: #e6c068; margin-right: 10px;"></span>
-                            <p><span>Facebook:</span><br><a href="https://www.facebook.com/groups/szallashirdeto">rekalacaresort</a>
-                            </p>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-            
-        </div>
     </section>
     <!-- Footer-->
     <footer class="bg-dark py-5">
-        
+
         <div class="container px-4 px-lg-5">
             <div class="small text-center copys">Copyright &copy; 2023<img class="img-fluid logom"
                     src="assets/img/webdesign500.png" alt="..."></div>
 
-        </div>        
+        </div>
 
     </footer>
     <!-- Bootstrap core JS-->
